@@ -13,6 +13,7 @@
     "@vercel/analytics": "^2.0.1",
     "lucide-react": "^0.368.0",
     "monaco-editor": "^0.55.1",
+    "puppeteer": "^25.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zustand": "^4.5.7"
