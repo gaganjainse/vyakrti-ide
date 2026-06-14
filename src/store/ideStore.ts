@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { Lang } from '../i18n';
 
 export interface VirtualFile {
   id: string;
@@ -35,6 +36,7 @@ interface IdeState {
   buildStatus: BuildStatus;
   transliterationMode: TransliterationMode;
   theme: ThemeMode;
+  uiLang: Lang;
   ast: any;
   tokens: string[];
   bytecode: string;
@@ -107,6 +109,7 @@ export const useIdeStore = create<IdeState>()(
       buildStatus: 'idle',
       transliterationMode: 'devanagari',
       theme: 'dark',
+      uiLang: 'sa',
       ast: null,
       tokens: [],
       bytecode: '',
@@ -212,6 +215,7 @@ export const useIdeStore = create<IdeState>()(
 
       toggleTransliteration: () => set(() => ({ transliterationMode: 'devanagari' })),
       toggleTheme: () => set((s) => ({ theme: s.theme === 'dark' ? 'light' : 'dark' })),
+      toggleUiLang: () => set((s) => ({ uiLang: s.uiLang === 'en' ? 'sa' : 'en' })),
       setSettingsOpen: (open) => set({ isSettingsOpen: open }),
       setSearchQuery: (query) => set({ searchQuery: query }),
       appendLog: (message) => set((s) => ({ outputLog: [...s.outputLog, message] })),
