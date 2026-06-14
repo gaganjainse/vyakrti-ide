@@ -55,7 +55,6 @@ export default function App() {
         <ErrorBoundary><CommandPalette /></ErrorBoundary>
 
         {isSettingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
-        
       </div>
     </ErrorBoundary>
   );
