@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import { ErrorBoundary } from './components/Panels/ErrorBoundary';
 import { TopBar } from './components/Toolbar/TopBar';
 import { ProjectExplorer } from './components/Sidebar/ProjectExplorer';
@@ -57,7 +56,6 @@ export default function App() {
 
         {isSettingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         
-        <Analytics />
       </div>
     </ErrorBoundary>
   );
