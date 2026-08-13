@@ -12,7 +12,7 @@ export const TopBar = () => {
   } = useIdeStore();
 
   const [showSaveToast, setShowSaveToast] = useState(false);
-  const saveToastTimer = useRef<ReturnType<typeof setTimeout>>();
+  const saveToastTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const isRunning = buildStatus === 'compiling' || buildStatus === 'running';
   const activeFile = files.find((f) => f.id === activeFileId);
 
