@@ -1,5 +1,9 @@
 # Vyākṛti Workbench
 
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
 A browser-based IDE for Vyākṛti, an experimental Sanskrit-oriented programming language.
 
 ## Features
