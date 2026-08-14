@@ -2,7 +2,7 @@
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-GPL--3.0--or--later-blue?style=for-the-badge)
 
 A browser-based IDE for Vyākṛti, an experimental Sanskrit-oriented programming language.
 
@@ -22,4 +22,5 @@ npm run build
 npm run dev
 
 ## License
-MIT
+
+GPL-3.0-or-later
