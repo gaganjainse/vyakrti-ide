@@ -24,3 +24,6 @@ npm run dev
 ## License
 
 GPL-3.0-or-later
+## 📚 Docs
+
+Fleet-wide reading compilation: [shesh-docs](https://github.com/gaganjainse/shesh-docs).
